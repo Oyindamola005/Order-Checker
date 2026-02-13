@@ -1,12 +1,12 @@
-const menu = [
+const item = [
     {name: "Jollof Rice", price: 2000},
     {name: "Chicken", price: 4000},
     {name: "Salad", price : 1000},
 ];
-for(let i=0; i<menu.lenght; i++)
+for(let i=0; i<item.lenght; i++)
 {
-let quantity = prompt("How many portion" + menu[i].name + "do you want to order");
+let quantity = prompt("How many" + item[i].name + "do you want to order");
 quantity =Number(quantity);
-let totalCost = quantity * menu[i].price;
-alert("Total order placed for" + menu[i]);
+let totalCost = quantity * item[i].price;
+alert("Total order for" + item[i].name + "is #" + totalCost);
 };
